@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head> <title>scope</title></head>
+  <body>
+<div>
+  <ul>
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+    <li>item-6</li>
+    <li>item-7</li>
+  </ul>
+</div>
+<script>
+  var str="this is a string";
+  var str="this is a praveen";
+  console.log(str);
+  let a="u7";
+  {
+    let a="u"
+    console.log(a);
+  }
+  // const a="this cannot be changed";
+  // a="this is want";
+  // console.log(a);
+  let age=4;
+  if(age>18)
+  { 
+    console.log("you can drink");
+  }
+else{
+console.log("you cant drink");
+}
+
+
+const cups=45;
+switch(cups){
+case 1:
+console.log("the cups are 1");
+break;
+case 6:
+console.log("the cups are 6");
+break;
+case 34:
+console.log("the cups are 34");
+break;
+default:
+  console.log("none of the above");
+  break;
+
+}
+</script>
+<script>
+  let myvar=34;
+  let myvar2= "praveen";
+  let myvar3=true;
+  let myvar4=null;
+  let myvar5=undefined;
+
+
+  let employee = {
+    name: "praveen",
+    salary:10,
+    channel:"code with praveen",
+  }
+  console.log(employee);
+  let names= new Array(1,2,4,"praveen",undefined);
+  names=names.sort();
+  names.push("praveen is good");
+  console.log(names);
+  // if let names=new array(23): it gives us size but not array;
+</script>
+<script>
+function print(name,greet) {
+  console.log(greet+ " is a good boy"+name);
+}
+
+let greet="Good Morning";
+  let name="praveen";
+  let name1="uma";
+  let name2="jyothi";
+  let name3="brahmanaidu";
+
+// print(name1,greet);
+function sum(a,b,c) {
+  let d=a+b+c;
+  return d;
+}
+let returnval=sum(1,2,3);
+console.log(returnval);
+
+</script>
+<script>
+  // alert in browser java script does not return anything
+alert("this is a message");   
+let nam =prompt("what is your name", "Guest");
+console.log(nam);
+let deletepost =confirm("do you really want to delete this post");
+console.log(deletepost);
+if (deletepost) {
+  console.log("your post is deleted");
+}
+else
+{
+  console.log("your post is not deleted");
+}
+</script>
+
+  </body>
+</html>
